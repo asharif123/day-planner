@@ -30,5 +30,5 @@ for (var i = 0; i < timeBlocks.length; i++) {
 // once info is entered, user can save that event from add button
 // user can edit that event
 function saveEvent(event) {
-
+    
 }
