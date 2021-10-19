@@ -27,7 +27,7 @@ for (var i = 0; i < timeBlocks.length; i++) {
 
 // function that saves events stored by user
 // user clicks on a event and has the option to add information
-// once info is entered, user can save that event
+// once info is entered, user can save that event from add button
 // user can edit that event
 function saveEvent(event) {
 
