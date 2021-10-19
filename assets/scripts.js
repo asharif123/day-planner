@@ -22,7 +22,7 @@ function pastPresentFuture(hour) {
 // add each timeblock to the timeblocks container
 var eventBlocks = $("#timeblocks");
 for (var i = 0; i < timeBlocks.length; i++) {
-    eventBlocks.append(`<div class="timeblock-information d-flex my-4">${timings[i]}<textarea class=" mx-3 ${pastPresentFuture(timeBlocks[i])}"></textarea></div>`);
+    eventBlocks.append(`<div class="timeblock-information d-flex my-4">${timings[i]}<textarea class=" mx-3 ${pastPresentFuture(timeBlocks[i])}"></textarea><button type="button" class="btn btn-primary" id="saveButton">Save</button></div>`);
 }
 
 // function that saves events stored by user

@@ -37,7 +37,7 @@ textarea {
   background-color: rgb(128, 127, 126);
   color: white;
   width: 70vw;
-  min-height: 150px;
+  min-height: 200px;
 }
 
 .present {
@@ -67,13 +67,17 @@ textarea {
   border-top: 1px dashed #000000;
 }
 
-.saveBtn {
-  border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #06aed5;
-  color: white;
+.timeblock-information {
+  position: relative;
 }
+
+#saveButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-height: 200px;
+}
+
 
 .saveBtn i:hover {
   font-size: 20px;
