@@ -32,7 +32,7 @@ for (var i = 0; i < timeBlocks.length; i++) {
 // this preserves all event info as array
 var allEventInfo = JSON.parse(localStorage.getItem("eventStorage")) || [];
 
-// loadEventData loads the text information in each text box with its corresponding unique id
+// loadEventData loads the text information in each text box with its unique corresponding id
 function loadEventData() {
     for (var i = 0; i < allEventInfo.length; i++) {
         $("#" + allEventInfo[i].id).val(allEventInfo[i].eventInformation);
