@@ -14,4 +14,4 @@ The program was created using HTML/CSS for the frontend and all the backend logi
 
 Here are screenshots from the website.
 
-![alt text](./assets/images/day-planner-main-page-1.JPG "main page")
+![alt text](./images/day-planner-main-page-1.JPG "main page")
