@@ -46,30 +46,19 @@ function saveEvent(event) {
     event.preventDefault;
     var element = (event.target);
     if (element.matches("#saveButton")) {
-        // user cannot submit empty info when clicking on save button
-        if ($(element).siblings("textarea").val() === '') {
-            return
-        }
 
         
         var eventText = $(element).siblings("textarea").val().trim();
-        // allEventInfo.push(eventText);
         var eventStorage = {
             eventInformation: eventText,
             id: $(element).siblings("textarea").attr("id")
         }
         allEventInfo.push(eventStorage);
-        // sees every event stored in the list
-        console.log(eventStorage.eventInformation);
         
         // id for each textbox
         console.log($(element).siblings("textarea").attr("data-index"));
 
         localStorage.setItem("eventStorage", JSON.stringify(allEventInfo));
-        // render
-        var lastPlayerInfo = JSON.parse(localStorage.getItem("eventStorage"));
-        ($(element).siblings("textarea").text(lastPlayerInfo.eventInformation));
-
     }
 
 };
