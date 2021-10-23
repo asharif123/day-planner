@@ -55,7 +55,6 @@ function saveEvent(event) {
         }
         allEventInfo.push(eventStorage);
         
-        // id for each textbox
         console.log($(element).siblings("textarea").attr("data-index"));
 
         localStorage.setItem("eventStorage", JSON.stringify(allEventInfo));
